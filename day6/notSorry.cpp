@@ -17,7 +17,7 @@ public:
 
         for (int i = 0; i <= 100000; i++)
         {
-            cout << endl;
+            cout << endl; 
             color(colors[i % 6]);
             cout << " =================================================== " << endl
                  << endl;
