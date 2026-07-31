@@ -1,11 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int decimalToBinary(int decNum)
+int decToBin(int decNum)
 {
     int answer = 0;
-    int power = 1; // 10^0  10^1  10^2...
-
+    int power = 1;
     while (decNum > 0)
     {
 
@@ -15,15 +14,18 @@ int decimalToBinary(int decNum)
         power = power * 10;
     }
     return answer;
-};
+}
+
 int main()
 {
+    // cout << decToBin(6) << endl;
+    // cout << decToBin(18);
 
-    cout << decimalToBinary(6) << endl;
+    for (int i = 1; i <= 10; i++)
+    {
+        cout << decToBin(i);
+        cout << endl;
+    }
 
-// for (int i = 1; i <= 10; i++)
-// {
-//     cout << decimalToBinary(i) << endl;
-// }
-return 0;
+    return 0;
 }

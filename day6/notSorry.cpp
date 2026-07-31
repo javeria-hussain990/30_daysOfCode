@@ -15,7 +15,7 @@ public:
     {
         int colors[] = {10, 11, 12, 13, 14, 15};
 
-        for (int i = 0; i <= 100000; i++)
+        for (int i = 0; i <= 100; i++)
         {
             cout << endl; 
             color(colors[i % 6]);
@@ -30,8 +30,8 @@ public:
     }
 };
 
-int main()
-{
+int main() 
+{ 
     SetConsoleOutputCP(CP_UTF8);
 
     notSorry ns;
@@ -51,4 +51,4 @@ int main()
     color(7);
 
     return 0;
-} 
+}
