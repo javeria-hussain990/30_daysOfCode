@@ -34,7 +34,7 @@ int proArr(int arr[], int size)
 
     int product = 1;
     for (int i = 0; i < 5; i++)
-    {
+    { 
         product = product * arr[i];
     }
     return product;
@@ -49,3 +49,5 @@ int main()
 
     return 0;
 }
+
+
